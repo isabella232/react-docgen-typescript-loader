@@ -98,14 +98,27 @@ exports[`all component fixtures compile successfully fixture: DefaultPropValue.t
 
 \\"use strict\\";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, \\"default\\", { enumerable: true, value: v });
+}) : function(o, v) {
+    o[\\"default\\"] = v;
+});
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result[\\"default\\"] = mod;
+    if (mod != null) for (var k in mod) if (k !== \\"default\\" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, \\"__esModule\\", { value: true });
+exports.DefaultPropValueComponent = void 0;
 var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 /**
  * Component with a prop with a default value.
@@ -119,15 +132,21 @@ exports.DefaultPropValueComponent.defaultProps = {
 };
 try {
     // @ts-ignore
-    exports.DefaultPropValueComponent.displayName = \\"DefaultPropValueComponent\\";
+    exports.DefaultPropValueComponent.__docgenInfo = {
+        description: \\"Component with a prop with a default value.\\",
+        props: { \\"color\\": { \\"defaultValue\\": { \\"value\\": \\"blue\\" }, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"parent\\": { \\"fileName\\": \\"react-docgen-typescript-loader/src/__fixtures__/components/DefaultPropValue.tsx\\", \\"name\\": \\"DefaultPropValueComponentProps\\" }, \\"required\\": true, \\"type\\": { \\"name\\": \\"enum\\", \\"raw\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\", \\"value\\": [{ \\"value\\": \\"\\\\\\"blue\\\\\\"\\", \\"raw\\": \\"\\\\\\"blue\\\\\\"\\" }, { \\"value\\": \\"\\\\\\"green\\\\\\"\\", \\"raw\\": \\"\\\\\\"green\\\\\\"\\" }] } }, \\"counter\\": { \\"defaultValue\\": { \\"value\\": 123 }, \\"description\\": \\"Button counter.\\", \\"name\\": \\"counter\\", \\"parent\\": { \\"fileName\\": \\"react-docgen-typescript-loader/src/__fixtures__/components/DefaultPropValue.tsx\\", \\"name\\": \\"DefaultPropValueComponentProps\\" }, \\"required\\": false, \\"type\\": { \\"name\\": \\"number\\", \\"raw\\": \\"number\\" } }, \\"disabled\\": { \\"defaultValue\\": { \\"value\\": false }, \\"description\\": \\"Button disabled.\\", \\"name\\": \\"disabled\\", \\"parent\\": { \\"fileName\\": \\"react-docgen-typescript-loader/src/__fixtures__/components/DefaultPropValue.tsx\\", \\"name\\": \\"DefaultPropValueComponentProps\\" }, \\"required\\": false, \\"type\\": { \\"name\\": \\"enum\\", \\"raw\\": \\"boolean\\", \\"value\\": [{ \\"value\\": \\"false\\", \\"raw\\": \\"false\\" }, { \\"value\\": \\"true\\", \\"raw\\": \\"true\\" }] } } },
+        displayName: \\"DefaultPropValueComponent\\"
+    };
     // @ts-ignore
-    exports.DefaultPropValueComponent.__docgenInfo = { \\"description\\": \\"Component with a prop with a default value.\\", \\"displayName\\": \\"DefaultPropValueComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": { value: \\"blue\\" }, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } }, \\"counter\\": { \\"defaultValue\\": { value: 123 }, \\"description\\": \\"Button counter.\\", \\"name\\": \\"counter\\", \\"required\\": false, \\"type\\": { \\"name\\": \\"number\\" } }, \\"disabled\\": { \\"defaultValue\\": { value: false }, \\"description\\": \\"Button disabled.\\", \\"name\\": \\"disabled\\", \\"required\\": false, \\"type\\": { \\"name\\": \\"boolean\\" } } } };
-    // @ts-ignore
-    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\")
+    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\") {
         // @ts-ignore
-        STORYBOOK_REACT_CLASSES[\\"src/__fixtures__/components/DefaultPropValue.tsx#DefaultPropValueComponent\\"] = { docgenInfo: exports.DefaultPropValueComponent.__docgenInfo, name: \\"DefaultPropValueComponent\\", path: \\"src/__fixtures__/components/DefaultPropValue.tsx#DefaultPropValueComponent\\" };
+        STORYBOOK_REACT_CLASSES['src/__fixtures__/components/DefaultPropValue.tsx#DefaultPropValueComponent'] = exports.DefaultPropValueComponent.__docgenInfo;
+    }
+    // @ts-ignore
+    exports.DefaultPropValueComponent.displayName = \\"DefaultPropValueComponent\\";
 }
-catch (__react_docgen_typescript_loader_error) { }
+catch (_a) { }
+;
 
 
 /***/ }),
@@ -244,14 +263,27 @@ exports[`all component fixtures compile successfully fixture: HyphenatedPropName
 
 \\"use strict\\";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, \\"default\\", { enumerable: true, value: v });
+}) : function(o, v) {
+    o[\\"default\\"] = v;
+});
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result[\\"default\\"] = mod;
+    if (mod != null) for (var k in mod) if (k !== \\"default\\" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, \\"__esModule\\", { value: true });
+exports.HyphenatedPropNameComponent = void 0;
 var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 /**
  * A component with a hyphenated prop name.
@@ -259,15 +291,21 @@ var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 exports.HyphenatedPropNameComponent = function (props) { return (React.createElement(\\"button\\", { style: { backgroundColor: props[\\"button-color\\"] } }, props.children)); };
 try {
     // @ts-ignore
-    exports.HyphenatedPropNameComponent.displayName = \\"HyphenatedPropNameComponent\\";
+    exports.HyphenatedPropNameComponent.__docgenInfo = {
+        description: \\"A component with a hyphenated prop name.\\",
+        props: { \\"button-color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"button-color\\", \\"parent\\": { \\"fileName\\": \\"react-docgen-typescript-loader/src/__fixtures__/components/HyphenatedPropName.tsx\\", \\"name\\": \\"HyphenatedPropNameProps\\" }, \\"required\\": true, \\"type\\": { \\"name\\": \\"enum\\", \\"raw\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\", \\"value\\": [{ \\"value\\": \\"\\\\\\"blue\\\\\\"\\", \\"raw\\": \\"\\\\\\"blue\\\\\\"\\" }, { \\"value\\": \\"\\\\\\"green\\\\\\"\\", \\"raw\\": \\"\\\\\\"green\\\\\\"\\" }] } } },
+        displayName: \\"HyphenatedPropNameComponent\\"
+    };
     // @ts-ignore
-    exports.HyphenatedPropNameComponent.__docgenInfo = { \\"description\\": \\"A component with a hyphenated prop name.\\", \\"displayName\\": \\"HyphenatedPropNameComponent\\", \\"props\\": { \\"button-color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"button-color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } } } };
-    // @ts-ignore
-    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\")
+    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\") {
         // @ts-ignore
-        STORYBOOK_REACT_CLASSES[\\"src/__fixtures__/components/HyphenatedPropName.tsx#HyphenatedPropNameComponent\\"] = { docgenInfo: exports.HyphenatedPropNameComponent.__docgenInfo, name: \\"HyphenatedPropNameComponent\\", path: \\"src/__fixtures__/components/HyphenatedPropName.tsx#HyphenatedPropNameComponent\\" };
+        STORYBOOK_REACT_CLASSES['src/__fixtures__/components/HyphenatedPropName.tsx#HyphenatedPropNameComponent'] = exports.HyphenatedPropNameComponent.__docgenInfo;
+    }
+    // @ts-ignore
+    exports.HyphenatedPropNameComponent.displayName = \\"HyphenatedPropNameComponent\\";
 }
-catch (__react_docgen_typescript_loader_error) { }
+catch (_a) { }
+;
 
 
 /***/ }),
@@ -384,14 +422,27 @@ exports[`all component fixtures compile successfully fixture: MultiProps.tsx 1`]
 
 \\"use strict\\";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, \\"default\\", { enumerable: true, value: v });
+}) : function(o, v) {
+    o[\\"default\\"] = v;
+});
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result[\\"default\\"] = mod;
+    if (mod != null) for (var k in mod) if (k !== \\"default\\" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, \\"__esModule\\", { value: true });
+exports.MultiPropsComponent = void 0;
 var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 /**
  * This is a component with multiple props.
@@ -399,15 +450,21 @@ var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 exports.MultiPropsComponent = function (props) { return (React.createElement(\\"button\\", { style: { backgroundColor: props.color } }, props.children)); };
 try {
     // @ts-ignore
-    exports.MultiPropsComponent.displayName = \\"MultiPropsComponent\\";
+    exports.MultiPropsComponent.__docgenInfo = {
+        description: \\"This is a component with multiple props.\\",
+        props: { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"parent\\": { \\"fileName\\": \\"react-docgen-typescript-loader/src/__fixtures__/components/MultiProps.tsx\\", \\"name\\": \\"MultiPropsComponentProps\\" }, \\"required\\": true, \\"type\\": { \\"name\\": \\"enum\\", \\"raw\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\", \\"value\\": [{ \\"value\\": \\"\\\\\\"blue\\\\\\"\\", \\"raw\\": \\"\\\\\\"blue\\\\\\"\\" }, { \\"value\\": \\"\\\\\\"green\\\\\\"\\", \\"raw\\": \\"\\\\\\"green\\\\\\"\\" }] } }, \\"size\\": { \\"defaultValue\\": null, \\"description\\": \\"Button size.\\", \\"name\\": \\"size\\", \\"parent\\": { \\"fileName\\": \\"react-docgen-typescript-loader/src/__fixtures__/components/MultiProps.tsx\\", \\"name\\": \\"MultiPropsComponentProps\\" }, \\"required\\": true, \\"type\\": { \\"name\\": \\"enum\\", \\"raw\\": \\"\\\\\\"small\\\\\\" | \\\\\\"large\\\\\\"\\", \\"value\\": [{ \\"value\\": \\"\\\\\\"small\\\\\\"\\", \\"raw\\": \\"\\\\\\"small\\\\\\"\\" }, { \\"value\\": \\"\\\\\\"large\\\\\\"\\", \\"raw\\": \\"\\\\\\"large\\\\\\"\\" }] } } },
+        displayName: \\"MultiPropsComponent\\"
+    };
     // @ts-ignore
-    exports.MultiPropsComponent.__docgenInfo = { \\"description\\": \\"This is a component with multiple props.\\", \\"displayName\\": \\"MultiPropsComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } }, \\"size\\": { \\"defaultValue\\": null, \\"description\\": \\"Button size.\\", \\"name\\": \\"size\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"small\\\\\\" | \\\\\\"large\\\\\\"\\" } } } };
-    // @ts-ignore
-    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\")
+    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\") {
         // @ts-ignore
-        STORYBOOK_REACT_CLASSES[\\"src/__fixtures__/components/MultiProps.tsx#MultiPropsComponent\\"] = { docgenInfo: exports.MultiPropsComponent.__docgenInfo, name: \\"MultiPropsComponent\\", path: \\"src/__fixtures__/components/MultiProps.tsx#MultiPropsComponent\\" };
+        STORYBOOK_REACT_CLASSES['src/__fixtures__/components/MultiProps.tsx#MultiPropsComponent'] = exports.MultiPropsComponent.__docgenInfo;
+    }
+    // @ts-ignore
+    exports.MultiPropsComponent.displayName = \\"MultiPropsComponent\\";
 }
-catch (__react_docgen_typescript_loader_error) { }
+catch (_a) { }
+;
 
 
 /***/ }),
@@ -524,14 +581,27 @@ exports[`all component fixtures compile successfully fixture: MultilineDescripti
 
 \\"use strict\\";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, \\"default\\", { enumerable: true, value: v });
+}) : function(o, v) {
+    o[\\"default\\"] = v;
+});
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result[\\"default\\"] = mod;
+    if (mod != null) for (var k in mod) if (k !== \\"default\\" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, \\"__esModule\\", { value: true });
+exports.MultilineDescriptionComponent = void 0;
 var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 /**
  * A component with a multiline description.
@@ -541,15 +611,21 @@ var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 exports.MultilineDescriptionComponent = function (props) { return (React.createElement(\\"button\\", { style: { backgroundColor: props.color } }, props.children)); };
 try {
     // @ts-ignore
-    exports.MultilineDescriptionComponent.displayName = \\"MultilineDescriptionComponent\\";
+    exports.MultilineDescriptionComponent.__docgenInfo = {
+        description: \\"A component with a multiline description.\\\\n\\\\nSecond line.\\",
+        props: { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"parent\\": { \\"fileName\\": \\"react-docgen-typescript-loader/src/__fixtures__/components/MultilineDescription.tsx\\", \\"name\\": \\"MultilineDescriptionProps\\" }, \\"required\\": true, \\"type\\": { \\"name\\": \\"enum\\", \\"raw\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\", \\"value\\": [{ \\"value\\": \\"\\\\\\"blue\\\\\\"\\", \\"raw\\": \\"\\\\\\"blue\\\\\\"\\" }, { \\"value\\": \\"\\\\\\"green\\\\\\"\\", \\"raw\\": \\"\\\\\\"green\\\\\\"\\" }] } } },
+        displayName: \\"MultilineDescriptionComponent\\"
+    };
     // @ts-ignore
-    exports.MultilineDescriptionComponent.__docgenInfo = { \\"description\\": \\"A component with a multiline description.\\\\n\\\\nSecond line.\\", \\"displayName\\": \\"MultilineDescriptionComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } } } };
-    // @ts-ignore
-    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\")
+    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\") {
         // @ts-ignore
-        STORYBOOK_REACT_CLASSES[\\"src/__fixtures__/components/MultilineDescription.tsx#MultilineDescriptionComponent\\"] = { docgenInfo: exports.MultilineDescriptionComponent.__docgenInfo, name: \\"MultilineDescriptionComponent\\", path: \\"src/__fixtures__/components/MultilineDescription.tsx#MultilineDescriptionComponent\\" };
+        STORYBOOK_REACT_CLASSES['src/__fixtures__/components/MultilineDescription.tsx#MultilineDescriptionComponent'] = exports.MultilineDescriptionComponent.__docgenInfo;
+    }
+    // @ts-ignore
+    exports.MultilineDescriptionComponent.displayName = \\"MultilineDescriptionComponent\\";
 }
-catch (__react_docgen_typescript_loader_error) { }
+catch (_a) { }
+;
 
 
 /***/ }),
@@ -666,14 +742,27 @@ exports[`all component fixtures compile successfully fixture: MultilinePropDescr
 
 \\"use strict\\";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, \\"default\\", { enumerable: true, value: v });
+}) : function(o, v) {
+    o[\\"default\\"] = v;
+});
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result[\\"default\\"] = mod;
+    if (mod != null) for (var k in mod) if (k !== \\"default\\" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, \\"__esModule\\", { value: true });
+exports.MultilinePropDescriptionComponent = void 0;
 var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 /**
  * A component with multiline prop description.
@@ -681,15 +770,21 @@ var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 exports.MultilinePropDescriptionComponent = function (props) { return (React.createElement(\\"button\\", { style: { backgroundColor: props.color } }, props.children)); };
 try {
     // @ts-ignore
-    exports.MultilinePropDescriptionComponent.displayName = \\"MultilinePropDescriptionComponent\\";
+    exports.MultilinePropDescriptionComponent.__docgenInfo = {
+        description: \\"A component with multiline prop description.\\",
+        props: { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"This is a multiline prop description.\\\\n\\\\nSecond line.\\", \\"name\\": \\"color\\", \\"parent\\": { \\"fileName\\": \\"react-docgen-typescript-loader/src/__fixtures__/components/MultilinePropDescription.tsx\\", \\"name\\": \\"MultilinePropDescriptionComponentProps\\" }, \\"required\\": true, \\"type\\": { \\"name\\": \\"enum\\", \\"raw\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\", \\"value\\": [{ \\"value\\": \\"\\\\\\"blue\\\\\\"\\", \\"raw\\": \\"\\\\\\"blue\\\\\\"\\" }, { \\"value\\": \\"\\\\\\"green\\\\\\"\\", \\"raw\\": \\"\\\\\\"green\\\\\\"\\" }] } } },
+        displayName: \\"MultilinePropDescriptionComponent\\"
+    };
     // @ts-ignore
-    exports.MultilinePropDescriptionComponent.__docgenInfo = { \\"description\\": \\"A component with multiline prop description.\\", \\"displayName\\": \\"MultilinePropDescriptionComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"This is a multiline prop description.\\\\n\\\\nSecond line.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } } } };
-    // @ts-ignore
-    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\")
+    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\") {
         // @ts-ignore
-        STORYBOOK_REACT_CLASSES[\\"src/__fixtures__/components/MultilinePropDescription.tsx#MultilinePropDescriptionComponent\\"] = { docgenInfo: exports.MultilinePropDescriptionComponent.__docgenInfo, name: \\"MultilinePropDescriptionComponent\\", path: \\"src/__fixtures__/components/MultilinePropDescription.tsx#MultilinePropDescriptionComponent\\" };
+        STORYBOOK_REACT_CLASSES['src/__fixtures__/components/MultilinePropDescription.tsx#MultilinePropDescriptionComponent'] = exports.MultilinePropDescriptionComponent.__docgenInfo;
+    }
+    // @ts-ignore
+    exports.MultilinePropDescriptionComponent.displayName = \\"MultilinePropDescriptionComponent\\";
 }
-catch (__react_docgen_typescript_loader_error) { }
+catch (_a) { }
+;
 
 
 /***/ }),
@@ -806,14 +901,27 @@ exports[`all component fixtures compile successfully fixture: Simple.tsx 1`] = `
 
 \\"use strict\\";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, \\"default\\", { enumerable: true, value: v });
+}) : function(o, v) {
+    o[\\"default\\"] = v;
+});
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result[\\"default\\"] = mod;
+    if (mod != null) for (var k in mod) if (k !== \\"default\\" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, \\"__esModule\\", { value: true });
+exports.SimpleComponent = void 0;
 var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 /**
  * A simple component.
@@ -821,15 +929,21 @@ var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 exports.SimpleComponent = function (props) { return (React.createElement(\\"button\\", { style: { backgroundColor: props.color } }, props.children)); };
 try {
     // @ts-ignore
-    exports.SimpleComponent.displayName = \\"SimpleComponent\\";
+    exports.SimpleComponent.__docgenInfo = {
+        description: \\"A simple component.\\",
+        props: { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"parent\\": { \\"fileName\\": \\"react-docgen-typescript-loader/src/__fixtures__/components/Simple.tsx\\", \\"name\\": \\"SimpleComponentProps\\" }, \\"required\\": true, \\"type\\": { \\"name\\": \\"enum\\", \\"raw\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\", \\"value\\": [{ \\"value\\": \\"\\\\\\"blue\\\\\\"\\", \\"raw\\": \\"\\\\\\"blue\\\\\\"\\" }, { \\"value\\": \\"\\\\\\"green\\\\\\"\\", \\"raw\\": \\"\\\\\\"green\\\\\\"\\" }] } } },
+        displayName: \\"SimpleComponent\\"
+    };
     // @ts-ignore
-    exports.SimpleComponent.__docgenInfo = { \\"description\\": \\"A simple component.\\", \\"displayName\\": \\"SimpleComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } } } };
-    // @ts-ignore
-    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\")
+    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\") {
         // @ts-ignore
-        STORYBOOK_REACT_CLASSES[\\"src/__fixtures__/components/Simple.tsx#SimpleComponent\\"] = { docgenInfo: exports.SimpleComponent.__docgenInfo, name: \\"SimpleComponent\\", path: \\"src/__fixtures__/components/Simple.tsx#SimpleComponent\\" };
+        STORYBOOK_REACT_CLASSES['src/__fixtures__/components/Simple.tsx#SimpleComponent'] = exports.SimpleComponent.__docgenInfo;
+    }
+    // @ts-ignore
+    exports.SimpleComponent.displayName = \\"SimpleComponent\\";
 }
-catch (__react_docgen_typescript_loader_error) { }
+catch (_a) { }
+;
 
 
 /***/ }),
@@ -946,14 +1060,27 @@ exports[`all component fixtures compile successfully fixture: TextOnlyComponent.
 
 \\"use strict\\";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, \\"default\\", { enumerable: true, value: v });
+}) : function(o, v) {
+    o[\\"default\\"] = v;
+});
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result[\\"default\\"] = mod;
+    if (mod != null) for (var k in mod) if (k !== \\"default\\" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, \\"__esModule\\", { value: true });
+exports.SimpleComponent = void 0;
 var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 /**
  * A component with only text content wrapped in a div.
@@ -963,15 +1090,21 @@ var React = __importStar(__webpack_require__(/*! react */ \\"react\\"));
 exports.SimpleComponent = function () { return (React.createElement(\\"div\\", null, \\"Test only component\\")); };
 try {
     // @ts-ignore
-    exports.SimpleComponent.displayName = \\"SimpleComponent\\";
+    exports.SimpleComponent.__docgenInfo = {
+        description: \\"A component with only text content wrapped in a div.\\\\n\\\\nRef: https://github.com/strothj/react-docgen-typescript-loader/issues/7\\",
+        props: {},
+        displayName: \\"SimpleComponent\\"
+    };
     // @ts-ignore
-    exports.SimpleComponent.__docgenInfo = { \\"description\\": \\"A component with only text content wrapped in a div.\\\\n\\\\nRef: https://github.com/strothj/react-docgen-typescript-loader/issues/7\\", \\"displayName\\": \\"SimpleComponent\\", \\"props\\": {} };
-    // @ts-ignore
-    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\")
+    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\") {
         // @ts-ignore
-        STORYBOOK_REACT_CLASSES[\\"src/__fixtures__/components/TextOnlyComponent.tsx#SimpleComponent\\"] = { docgenInfo: exports.SimpleComponent.__docgenInfo, name: \\"SimpleComponent\\", path: \\"src/__fixtures__/components/TextOnlyComponent.tsx#SimpleComponent\\" };
+        STORYBOOK_REACT_CLASSES['src/__fixtures__/components/TextOnlyComponent.tsx#SimpleComponent'] = exports.SimpleComponent.__docgenInfo;
+    }
+    // @ts-ignore
+    exports.SimpleComponent.displayName = \\"SimpleComponent\\";
 }
-catch (__react_docgen_typescript_loader_error) { }
+catch (_a) { }
+;
 
 
 /***/ }),

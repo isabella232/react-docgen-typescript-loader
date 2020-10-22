@@ -16,16 +16,20 @@ export const SimpleComponent: React.SFC<SimpleComponentProps> = props => (
 );
 
 try {
+// @ts-ignore
+  SimpleComponent.__docgenInfo = {
+      description: \\"A simple component.\\",
+      props: {\\"color\\":{\\"defaultValue\\":null,\\"description\\":\\"Button color.\\",\\"name\\":\\"color\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/Simple.tsx\\",\\"name\\":\\"SimpleComponentProps\\"},\\"required\\":true,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\",\\"value\\":[{\\"value\\":\\"\\\\\\"blue\\\\\\"\\",\\"raw\\":\\"\\\\\\"blue\\\\\\"\\"},{\\"value\\":\\"\\\\\\"green\\\\\\"\\",\\"raw\\":\\"\\\\\\"green\\\\\\"\\"}]}}},
+      displayName: \\"SimpleComponent\\"
+  };
+  // @ts-ignore
+  if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\") {
     // @ts-ignore
-    SimpleComponent.displayName = \\"SimpleComponent\\";
-    // @ts-ignore
-    SimpleComponent.__docgenInfo = { \\"description\\": \\"A simple component.\\", \\"displayName\\": \\"SimpleComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } } } };
-    // @ts-ignore
-    if (typeof STORYBOOK_REACT_CLASSES !== \\"undefined\\")
-        // @ts-ignore
-        STORYBOOK_REACT_CLASSES[\\"Simple.tsx#SimpleComponent\\"] = { docgenInfo: SimpleComponent.__docgenInfo, name: \\"SimpleComponent\\", path: \\"Simple.tsx#SimpleComponent\\" };
-}
-catch (__react_docgen_typescript_loader_error) { }"
+    STORYBOOK_REACT_CLASSES['Simple.tsx#SimpleComponent'] = SimpleComponent.__docgenInfo;
+  }
+  // @ts-ignore
+  SimpleComponent.displayName = \\"SimpleComponent\\"
+} catch {};"
 `;
 
 exports[`component fixture DefaultPropValue.tsx has code block generated 1`] = `
@@ -68,12 +72,16 @@ DefaultPropValueComponent.defaultProps = {
 };
 
 try {
-    // @ts-ignore
-    DefaultPropValueComponent.displayName = \\"DefaultPropValueComponent\\";
-    // @ts-ignore
-    DefaultPropValueComponent.__docgenInfo = { \\"description\\": \\"Component with a prop with a default value.\\", \\"displayName\\": \\"DefaultPropValueComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": { value: \\"blue\\" }, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } }, \\"counter\\": { \\"defaultValue\\": { value: 123 }, \\"description\\": \\"Button counter.\\", \\"name\\": \\"counter\\", \\"required\\": false, \\"type\\": { \\"name\\": \\"number\\" } }, \\"disabled\\": { \\"defaultValue\\": { value: false }, \\"description\\": \\"Button disabled.\\", \\"name\\": \\"disabled\\", \\"required\\": false, \\"type\\": { \\"name\\": \\"boolean\\" } } } };
-}
-catch (__react_docgen_typescript_loader_error) { }"
+// @ts-ignore
+  DefaultPropValueComponent.__docgenInfo = {
+      description: \\"Component with a prop with a default value.\\",
+      props: {\\"color\\":{\\"defaultValue\\":{\\"value\\":\\"blue\\"},\\"description\\":\\"Button color.\\",\\"name\\":\\"color\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/DefaultPropValue.tsx\\",\\"name\\":\\"DefaultPropValueComponentProps\\"},\\"required\\":true,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\",\\"value\\":[{\\"value\\":\\"\\\\\\"blue\\\\\\"\\",\\"raw\\":\\"\\\\\\"blue\\\\\\"\\"},{\\"value\\":\\"\\\\\\"green\\\\\\"\\",\\"raw\\":\\"\\\\\\"green\\\\\\"\\"}]}},\\"counter\\":{\\"defaultValue\\":{\\"value\\":123},\\"description\\":\\"Button counter.\\",\\"name\\":\\"counter\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/DefaultPropValue.tsx\\",\\"name\\":\\"DefaultPropValueComponentProps\\"},\\"required\\":false,\\"type\\":{\\"name\\":\\"number\\",\\"raw\\":\\"number\\"}},\\"disabled\\":{\\"defaultValue\\":{\\"value\\":false},\\"description\\":\\"Button disabled.\\",\\"name\\":\\"disabled\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/DefaultPropValue.tsx\\",\\"name\\":\\"DefaultPropValueComponentProps\\"},\\"required\\":false,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"boolean\\",\\"value\\":[{\\"value\\":\\"false\\",\\"raw\\":\\"false\\"},{\\"value\\":\\"true\\",\\"raw\\":\\"true\\"}]}}},
+      displayName: \\"DefaultPropValueComponent\\"
+  };
+  
+  // @ts-ignore
+  DefaultPropValueComponent.displayName = \\"DefaultPropValueComponent\\"
+} catch {};"
 `;
 
 exports[`component fixture HyphenatedPropName.tsx has code block generated 1`] = `
@@ -96,12 +104,16 @@ export const HyphenatedPropNameComponent: React.SFC<
 );
 
 try {
-    // @ts-ignore
-    HyphenatedPropNameComponent.displayName = \\"HyphenatedPropNameComponent\\";
-    // @ts-ignore
-    HyphenatedPropNameComponent.__docgenInfo = { \\"description\\": \\"A component with a hyphenated prop name.\\", \\"displayName\\": \\"HyphenatedPropNameComponent\\", \\"props\\": { \\"button-color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"button-color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } } } };
-}
-catch (__react_docgen_typescript_loader_error) { }"
+// @ts-ignore
+  HyphenatedPropNameComponent.__docgenInfo = {
+      description: \\"A component with a hyphenated prop name.\\",
+      props: {\\"button-color\\":{\\"defaultValue\\":null,\\"description\\":\\"Button color.\\",\\"name\\":\\"button-color\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/HyphenatedPropName.tsx\\",\\"name\\":\\"HyphenatedPropNameProps\\"},\\"required\\":true,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\",\\"value\\":[{\\"value\\":\\"\\\\\\"blue\\\\\\"\\",\\"raw\\":\\"\\\\\\"blue\\\\\\"\\"},{\\"value\\":\\"\\\\\\"green\\\\\\"\\",\\"raw\\":\\"\\\\\\"green\\\\\\"\\"}]}}},
+      displayName: \\"HyphenatedPropNameComponent\\"
+  };
+  
+  // @ts-ignore
+  HyphenatedPropNameComponent.displayName = \\"HyphenatedPropNameComponent\\"
+} catch {};"
 `;
 
 exports[`component fixture MultiProps.tsx has code block generated 1`] = `
@@ -125,12 +137,16 @@ export const MultiPropsComponent: React.SFC<
 );
 
 try {
-    // @ts-ignore
-    MultiPropsComponent.displayName = \\"MultiPropsComponent\\";
-    // @ts-ignore
-    MultiPropsComponent.__docgenInfo = { \\"description\\": \\"This is a component with multiple props.\\", \\"displayName\\": \\"MultiPropsComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } }, \\"size\\": { \\"defaultValue\\": null, \\"description\\": \\"Button size.\\", \\"name\\": \\"size\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"small\\\\\\" | \\\\\\"large\\\\\\"\\" } } } };
-}
-catch (__react_docgen_typescript_loader_error) { }"
+// @ts-ignore
+  MultiPropsComponent.__docgenInfo = {
+      description: \\"This is a component with multiple props.\\",
+      props: {\\"color\\":{\\"defaultValue\\":null,\\"description\\":\\"Button color.\\",\\"name\\":\\"color\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/MultiProps.tsx\\",\\"name\\":\\"MultiPropsComponentProps\\"},\\"required\\":true,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\",\\"value\\":[{\\"value\\":\\"\\\\\\"blue\\\\\\"\\",\\"raw\\":\\"\\\\\\"blue\\\\\\"\\"},{\\"value\\":\\"\\\\\\"green\\\\\\"\\",\\"raw\\":\\"\\\\\\"green\\\\\\"\\"}]}},\\"size\\":{\\"defaultValue\\":null,\\"description\\":\\"Button size.\\",\\"name\\":\\"size\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/MultiProps.tsx\\",\\"name\\":\\"MultiPropsComponentProps\\"},\\"required\\":true,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"\\\\\\"small\\\\\\" | \\\\\\"large\\\\\\"\\",\\"value\\":[{\\"value\\":\\"\\\\\\"small\\\\\\"\\",\\"raw\\":\\"\\\\\\"small\\\\\\"\\"},{\\"value\\":\\"\\\\\\"large\\\\\\"\\",\\"raw\\":\\"\\\\\\"large\\\\\\"\\"}]}}},
+      displayName: \\"MultiPropsComponent\\"
+  };
+  
+  // @ts-ignore
+  MultiPropsComponent.displayName = \\"MultiPropsComponent\\"
+} catch {};"
 `;
 
 exports[`component fixture MultilineDescription.tsx has code block generated 1`] = `
@@ -153,12 +169,16 @@ export const MultilineDescriptionComponent: React.SFC<
 );
 
 try {
-    // @ts-ignore
-    MultilineDescriptionComponent.displayName = \\"MultilineDescriptionComponent\\";
-    // @ts-ignore
-    MultilineDescriptionComponent.__docgenInfo = { \\"description\\": \\"A component with a multiline description.\\\\n\\\\nSecond line.\\", \\"displayName\\": \\"MultilineDescriptionComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } } } };
-}
-catch (__react_docgen_typescript_loader_error) { }"
+// @ts-ignore
+  MultilineDescriptionComponent.__docgenInfo = {
+      description: \\"A component with a multiline description.\\\\n\\\\nSecond line.\\",
+      props: {\\"color\\":{\\"defaultValue\\":null,\\"description\\":\\"Button color.\\",\\"name\\":\\"color\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/MultilineDescription.tsx\\",\\"name\\":\\"MultilineDescriptionProps\\"},\\"required\\":true,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\",\\"value\\":[{\\"value\\":\\"\\\\\\"blue\\\\\\"\\",\\"raw\\":\\"\\\\\\"blue\\\\\\"\\"},{\\"value\\":\\"\\\\\\"green\\\\\\"\\",\\"raw\\":\\"\\\\\\"green\\\\\\"\\"}]}}},
+      displayName: \\"MultilineDescriptionComponent\\"
+  };
+  
+  // @ts-ignore
+  MultilineDescriptionComponent.displayName = \\"MultilineDescriptionComponent\\"
+} catch {};"
 `;
 
 exports[`component fixture MultilinePropDescription.tsx has code block generated 1`] = `
@@ -183,12 +203,16 @@ export const MultilinePropDescriptionComponent: React.SFC<
 );
 
 try {
-    // @ts-ignore
-    MultilinePropDescriptionComponent.displayName = \\"MultilinePropDescriptionComponent\\";
-    // @ts-ignore
-    MultilinePropDescriptionComponent.__docgenInfo = { \\"description\\": \\"A component with multiline prop description.\\", \\"displayName\\": \\"MultilinePropDescriptionComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"This is a multiline prop description.\\\\n\\\\nSecond line.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } } } };
-}
-catch (__react_docgen_typescript_loader_error) { }"
+// @ts-ignore
+  MultilinePropDescriptionComponent.__docgenInfo = {
+      description: \\"A component with multiline prop description.\\",
+      props: {\\"color\\":{\\"defaultValue\\":null,\\"description\\":\\"This is a multiline prop description.\\\\n\\\\nSecond line.\\",\\"name\\":\\"color\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/MultilinePropDescription.tsx\\",\\"name\\":\\"MultilinePropDescriptionComponentProps\\"},\\"required\\":true,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\",\\"value\\":[{\\"value\\":\\"\\\\\\"blue\\\\\\"\\",\\"raw\\":\\"\\\\\\"blue\\\\\\"\\"},{\\"value\\":\\"\\\\\\"green\\\\\\"\\",\\"raw\\":\\"\\\\\\"green\\\\\\"\\"}]}}},
+      displayName: \\"MultilinePropDescriptionComponent\\"
+  };
+  
+  // @ts-ignore
+  MultilinePropDescriptionComponent.displayName = \\"MultilinePropDescriptionComponent\\"
+} catch {};"
 `;
 
 exports[`component fixture Simple.tsx has code block generated 1`] = `
@@ -207,12 +231,16 @@ export const SimpleComponent: React.SFC<SimpleComponentProps> = props => (
 );
 
 try {
-    // @ts-ignore
-    SimpleComponent.displayName = \\"SimpleComponent\\";
-    // @ts-ignore
-    SimpleComponent.__docgenInfo = { \\"description\\": \\"A simple component.\\", \\"displayName\\": \\"SimpleComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": null, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\" } } } };
-}
-catch (__react_docgen_typescript_loader_error) { }"
+// @ts-ignore
+  SimpleComponent.__docgenInfo = {
+      description: \\"A simple component.\\",
+      props: {\\"color\\":{\\"defaultValue\\":null,\\"description\\":\\"Button color.\\",\\"name\\":\\"color\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/Simple.tsx\\",\\"name\\":\\"SimpleComponentProps\\"},\\"required\\":true,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\",\\"value\\":[{\\"value\\":\\"\\\\\\"blue\\\\\\"\\",\\"raw\\":\\"\\\\\\"blue\\\\\\"\\"},{\\"value\\":\\"\\\\\\"green\\\\\\"\\",\\"raw\\":\\"\\\\\\"green\\\\\\"\\"}]}}},
+      displayName: \\"SimpleComponent\\"
+  };
+  
+  // @ts-ignore
+  SimpleComponent.displayName = \\"SimpleComponent\\"
+} catch {};"
 `;
 
 exports[`component fixture TextOnlyComponent.tsx has code block generated 1`] = `
@@ -228,12 +256,16 @@ export const SimpleComponent: React.SFC<{}> = () => (
 );
 
 try {
-    // @ts-ignore
-    SimpleComponent.displayName = \\"SimpleComponent\\";
-    // @ts-ignore
-    SimpleComponent.__docgenInfo = { \\"description\\": \\"A component with only text content wrapped in a div.\\\\n\\\\nRef: https://github.com/strothj/react-docgen-typescript-loader/issues/7\\", \\"displayName\\": \\"SimpleComponent\\", \\"props\\": {} };
-}
-catch (__react_docgen_typescript_loader_error) { }"
+// @ts-ignore
+  SimpleComponent.__docgenInfo = {
+      description: \\"A component with only text content wrapped in a div.\\\\n\\\\nRef: https://github.com/strothj/react-docgen-typescript-loader/issues/7\\",
+      props: {},
+      displayName: \\"SimpleComponent\\"
+  };
+  
+  // @ts-ignore
+  SimpleComponent.displayName = \\"SimpleComponent\\"
+} catch {};"
 `;
 
 exports[`generates value info for enums 1`] = `
@@ -276,10 +308,14 @@ DefaultPropValueComponent.defaultProps = {
 };
 
 try {
-    // @ts-ignore
-    DefaultPropValueComponent.displayName = \\"DefaultPropValueComponent\\";
-    // @ts-ignore
-    DefaultPropValueComponent.__docgenInfo = { \\"description\\": \\"Component with a prop with a default value.\\", \\"displayName\\": \\"DefaultPropValueComponent\\", \\"props\\": { \\"color\\": { \\"defaultValue\\": { value: \\"blue\\" }, \\"description\\": \\"Button color.\\", \\"name\\": \\"color\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"enum\\", \\"value\\": [{ \\"value\\": \\"\\\\\\"blue\\\\\\"\\" }, { \\"value\\": \\"\\\\\\"green\\\\\\"\\" }] } }, \\"counter\\": { \\"defaultValue\\": { value: 123 }, \\"description\\": \\"Button counter.\\", \\"name\\": \\"counter\\", \\"required\\": false, \\"type\\": { \\"name\\": \\"number\\" } }, \\"disabled\\": { \\"defaultValue\\": { value: false }, \\"description\\": \\"Button disabled.\\", \\"name\\": \\"disabled\\", \\"required\\": false, \\"type\\": { \\"name\\": \\"boolean\\" } } } };
-}
-catch (__react_docgen_typescript_loader_error) { }"
+// @ts-ignore
+  DefaultPropValueComponent.__docgenInfo = {
+      description: \\"Component with a prop with a default value.\\",
+      props: {\\"color\\":{\\"defaultValue\\":{\\"value\\":\\"blue\\"},\\"description\\":\\"Button color.\\",\\"name\\":\\"color\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/DefaultPropValue.tsx\\",\\"name\\":\\"DefaultPropValueComponentProps\\"},\\"required\\":true,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"\\\\\\"blue\\\\\\" | \\\\\\"green\\\\\\"\\",\\"value\\":[{\\"value\\":\\"\\\\\\"blue\\\\\\"\\",\\"raw\\":\\"\\\\\\"blue\\\\\\"\\"},{\\"value\\":\\"\\\\\\"green\\\\\\"\\",\\"raw\\":\\"\\\\\\"green\\\\\\"\\"}]}},\\"counter\\":{\\"defaultValue\\":{\\"value\\":123},\\"description\\":\\"Button counter.\\",\\"name\\":\\"counter\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/DefaultPropValue.tsx\\",\\"name\\":\\"DefaultPropValueComponentProps\\"},\\"required\\":false,\\"type\\":{\\"name\\":\\"number\\",\\"raw\\":\\"number\\"}},\\"disabled\\":{\\"defaultValue\\":{\\"value\\":false},\\"description\\":\\"Button disabled.\\",\\"name\\":\\"disabled\\",\\"parent\\":{\\"fileName\\":\\"react-docgen-typescript-loader/src/__fixtures__/components/DefaultPropValue.tsx\\",\\"name\\":\\"DefaultPropValueComponentProps\\"},\\"required\\":false,\\"type\\":{\\"name\\":\\"enum\\",\\"raw\\":\\"boolean\\",\\"value\\":[{\\"value\\":\\"false\\",\\"raw\\":\\"false\\"},{\\"value\\":\\"true\\",\\"raw\\":\\"true\\"}]}}},
+      displayName: \\"DefaultPropValueComponent\\"
+  };
+  
+  // @ts-ignore
+  DefaultPropValueComponent.displayName = \\"DefaultPropValueComponent\\"
+} catch {};"
 `;

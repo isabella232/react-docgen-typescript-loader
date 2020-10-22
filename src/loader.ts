@@ -11,7 +11,7 @@ import {
   withCompilerOptions,
   ParserOptions,
   FileParser,
-} from "react-docgen-typescript/lib/parser.js";
+} from "@luke-john/react-docgen-typescript/lib/parser.js";
 import LoaderOptions from "./LoaderOptions";
 import validateOptions from "./validateOptions";
 import generateDocgenCodeBlock from "./generateDocgenCodeBlock";
@@ -70,21 +70,7 @@ function processResource(
   // Convert the loader's flat options into the expected structure for
   // react-docgen-typescript.
   // See: node_modules/react-docgen-typescript/lib/parser.d.ts
-  const parserOptions: ParserOptions = {
-    componentNameResolver: options.componentNameResolver,
-    propFilter:
-      options.skipPropsWithName || options.skipPropsWithoutDoc
-        ? {
-            skipPropsWithName: options.skipPropsWithName || undefined,
-            skipPropsWithoutDoc: options.skipPropsWithoutDoc || undefined,
-          }
-        : options.propFilter,
-    shouldExtractLiteralValuesFromEnum:
-      options.shouldExtractLiteralValuesFromEnum,
-    savePropValueAsString: options.savePropValueAsString,
-    shouldRemoveUndefinedFromOptional:
-      options.shouldRemoveUndefinedFromOptional,
-  };
+  const parserOptions: ParserOptions = options.parserOptions || {};
 
   // Configure parser using settings provided to loader.
   // See: node_modules/react-docgen-typescript/lib/parser.d.ts
@@ -134,8 +120,6 @@ function processResource(
     },
   );
 
-  options.typePropName = options.typePropName || "type";
-
   // Return amended source code if there is docgen information available.
   if (componentDocs.length) {
     return generateDocgenCodeBlock({
@@ -144,7 +128,6 @@ function processResource(
       componentDocs,
       docgenCollectionName: options.docgenCollectionName,
       setDisplayName: options.setDisplayName,
-      typePropName: options.typePropName,
     });
   }
 

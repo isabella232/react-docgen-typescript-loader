@@ -5,41 +5,6 @@ const schema = {
   type: "object",
   additionalProperties: false,
   properties: {
-    skipPropsWithName: {
-      anyOf: [
-        { type: "string", minLength: 1 },
-        { type: "array", minItems: 1, items: { type: "string", minLength: 1 } },
-      ],
-    },
-
-    skipPropsWithoutDoc: {
-      type: "boolean",
-    },
-
-    componentNameResolver: {
-      // this is really { type: "function" }
-      not: {
-        oneOf: [
-          { type: "string" },
-          { type: "number" },
-          { type: "object" },
-          { type: "array" },
-        ],
-      },
-    },
-
-    propFilter: {
-      // this is really { type: "function" }
-      not: {
-        oneOf: [
-          { type: "string" },
-          { type: "number" },
-          { type: "object" },
-          { type: "array" },
-        ],
-      },
-    },
-
     tsconfigPath: {
       type: "string",
       minLength: 1,
@@ -57,20 +22,8 @@ const schema = {
       type: "boolean",
     },
 
-    shouldExtractLiteralValuesFromEnum: {
-      type: "boolean",
-    },
-
-    savePropValueAsString: {
-      type: "boolean",
-    },
-
-    typePropName: {
-      type: "string",
-    },
-
-    shouldRemoveUndefinedFromOptional: {
-      type: "boolean",
+    parserOptions: {
+      type: "object",
     },
   },
 };

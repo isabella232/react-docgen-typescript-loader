@@ -1,6 +1,9 @@
 import fs from "fs";
 import path from "path";
-import { parse, ParserOptions } from "react-docgen-typescript/lib/parser.js";
+import {
+  parse,
+  ParserOptions,
+} from "@luke-john/react-docgen-typescript/lib/parser.js";
 import generateDocgenCodeBlock, {
   GeneratorOptions,
 } from "./generateDocgenCodeBlock";
@@ -52,10 +55,6 @@ function loadFixtureTests(): GeneratorOptions[] {
 
 it("generates value info for enums", () => {
   expect(
-    generateDocgenCodeBlock(
-      getGeneratorOptions({ shouldExtractLiteralValuesFromEnum: true })(
-        "DefaultPropValue.tsx",
-      ),
-    ),
+    generateDocgenCodeBlock(getGeneratorOptions()("DefaultPropValue.tsx")),
   ).toMatchSnapshot();
 });
